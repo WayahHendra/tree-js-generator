@@ -1,0 +1,10 @@
+# Build output
+/dist
+
+# Dependencies
+/node_modules
+package-lock.json
+
+# Test mocks & artifacts
+/coverage
+/tests/mock_project
