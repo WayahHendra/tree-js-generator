@@ -1,7 +1,11 @@
 # 🌳 tree-js-generator (`make-tree`)
 
-[![NPM Version](https://img.shields.io/npm/v/tree-js-generator.svg)](https://www.npmjs.com/package/tree-js-generator)
-[![License](https://img.shields.io/npm/l/tree-js-generator.svg)](LICENSE)
+[![Tree Generator CLI](https://img.shields.io/badge/Tree--JS--Generator-CLI-black?style=for-the-badge&logo=tree-sitter&logoColor=white)](#)
+[![NPM Version](https://img.shields.io/npm/v/tree-js-generator?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/tree-js-generator)
+[![Node](https://img.shields.io/badge/Node-%3E%3D18.0.0-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Made with ❤️ by WyahHndraa](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F-by%20WyahHndraa-black?style=for-the-badge)](#)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
+
 
 A simple yet powerful CLI tool to generate a GitHub-style project directory tree and automatically inject it into your `README.md` file.
 
@@ -193,9 +197,19 @@ Now, every time you add, delete, or rename a file, your `README.md` will be upda
 
 -----
 
+## Documentation & Policies
+
+For detailed information on project management, security, and conduct, please refer to the following documents:
+
+* **Code of Conduct** – [CODE\_OF\_CONDUCT.md](./CONTRIBUTING.md)
+* **Security Guidelines** – [SECURITY.md](./SECURITY.md)
+* **Version Control Policy** – [VERSION\_CONTROL.md](./VERSION_CONTROL.md)
+* **Changelog** – [CHANGELOG.md](./CHANGELOG.md)
+
+## 🤝 Contributing
+
+Please refer to the **Version Control Policy** for detailed instructions on contributing: [VERSION\_CONTROL.md](./VERSION_CONTROL.md).
+
 ## 📜 License
 
-This project is licensed under the MIT License.
-
-```
-```
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
