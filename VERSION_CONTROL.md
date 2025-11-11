@@ -109,7 +109,7 @@ ux(profile): improve profile page layout
 - Example:
 
 ```
-git tag -a v1.0.0 -m "Initial stable release with authentication and nearby chat"
+git tag -a v1.0.0 -m "Initial stable release with tree visualization and CLI improvements"
 git push origin v1.0.0
 ```
 
