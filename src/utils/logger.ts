@@ -1,6 +1,5 @@
 import chalk from "chalk";
 
-
 /**
  * Logs an info message to the console with a yellow color.
  * @param {string} message - The info message to log.
@@ -16,7 +15,6 @@ export function logInfo(message: string) {
 export function logSuccess(message: string) {
   console.log(chalk.green("✅ " + message));
 }
-
 
 /**
  * Logs a warning message to the console with a yellow color.
@@ -35,5 +33,6 @@ export function logWarning(message: string) {
  */
 export function logError(message: string, err?: unknown) {
   console.error(chalk.red("❌ " + message));
-  if (err) console.error(chalk.gray(err instanceof Error ? err.message : String(err)));
+  if (err)
+    console.error(chalk.gray(err instanceof Error ? err.message : String(err)));
 }

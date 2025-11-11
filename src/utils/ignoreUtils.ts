@@ -4,11 +4,10 @@ import { minimatch } from "minimatch";
 
 let treeIgnorePatterns: string[] | null = null;
 
-
 /**
-* Returns the ignore pattern contained in the .treeignore file
-* in the given directory.
-* If the .treeignore file is not found, it returns an empty array.
+ * Returns the ignore pattern contained in the .treeignore file
+ * in the given directory.
+ * If the .treeignore file is not found, it returns an empty array.
  * @param {string} rootDir - The directory where the .treeignore file is located
  * @returns {string[]} The ignore pattern contained in the .treeignore file
  */
@@ -20,8 +19,8 @@ export function getTreeIgnorePatterns(rootDir: string): string[] {
     treeIgnorePatterns = fs
       .readFileSync(ignoreFile, "utf8")
       .split("\n")
-      .map(line => line.trim())
-      .filter(line => line && !line.startsWith("#"));
+      .map((line) => line.trim())
+      .filter((line) => line && !line.startsWith("#"));
   } else {
     treeIgnorePatterns = [];
   }
@@ -44,9 +43,8 @@ export function shouldIgnore(
   entryName: string,
   entryPath: string,
   baseIgnoreList: string[],
-  rootDir: string
+  rootDir: string,
 ): boolean {
-  
   const allPatterns = baseIgnoreList;
   const relativePath = path.relative(rootDir, entryPath);
 
@@ -56,13 +54,13 @@ export function shouldIgnore(
     if (pattern.endsWith("/")) {
       patternsToTest.push(pattern.substring(0, pattern.length - 1));
     }
-    
+
     for (const p of patternsToTest) {
       if (
-        minimatch(entryName, p, { dot: true }) || 
-        minimatch(relativePath, p, { dot: true }) 
+        minimatch(entryName, p, { dot: true }) ||
+        minimatch(relativePath, p, { dot: true })
       ) {
-        return true; 
+        return true;
       }
     }
   }

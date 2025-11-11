@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### \[v0.0.0] - YYYY-MM-DD
 
-* Here for draft update
+- Here for draft update
 
 ---
 
@@ -16,4 +16,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### \[v1.0.0] - 2025-11-11
 
-* First initializations and stable release.
+- First initializations and stable release.

@@ -18,7 +18,7 @@ export async function updateReadme(rootDir: string, tree: string) {
 
   let readme = fs.existsSync(readmePath)
     ? fs.readFileSync(readmePath, "utf8")
-    : "# Project Tree\n"; 
+    : "# Project Tree\n";
 
   //
   const content = `${TAG_START}\n\`\`\`\n${tree}\n\`\`\`\n${TAG_END}`;

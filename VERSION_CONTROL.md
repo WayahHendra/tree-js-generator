@@ -1,12 +1,12 @@
-# Version Control Policy – tree-js-generator 
+# Version Control Policy – tree-js-generator
 
 This document defines the version control practices, branching strategy, commit conventions, and release workflow for the **open-source** project `tree-js-generator`.
 
 ## Repository Access
 
-- The repository is **publicly accessible** under the MIT License.  
-- Write access is restricted to **maintainers and trusted contributors**.  
-- External contributions must go through the **pull request (PR)** process.  
+- The repository is **publicly accessible** under the MIT License.
+- Write access is restricted to **maintainers and trusted contributors**.
+- External contributions must go through the **pull request (PR)** process.
 - Sensitive credentials (e.g., API keys) must **never be committed** to the repository.
 
 ## Branching Strategy
@@ -119,4 +119,4 @@ git push origin v1.0.0
 - Persistent violations (e.g., pushing to main, unreviewed merges) may result in temporary access restrictions.
 - Contributors must acknowledge and follow this version control policy to maintain repository quality.
 
-*This document establishes the open-source version control standards for the `tree-js-generator` project, ensuring consistency, transparency, and security throughout development.*
+_This document establishes the open-source version control standards for the `tree-js-generator` project, ensuring consistency, transparency, and security throughout development._

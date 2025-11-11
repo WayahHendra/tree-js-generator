@@ -11,10 +11,7 @@ import { updateReadme } from "./core/updateReadme";
 import { logError, logInfo } from "./utils/logger";
 import { DEFAULT_IGNORES } from "./config/constants";
 import { GenerateTreeOptions } from "./config/types";
-import {
-  resetIgnoreCache,
-  getTreeIgnorePatterns,
-} from "./utils/ignoreUtils";
+import { resetIgnoreCache, getTreeIgnorePatterns } from "./utils/ignoreUtils";
 
 const pkg = require("../package.json");
 
@@ -23,7 +20,6 @@ const cwd = process.cwd();
 
 let isGenerating = false;
 let debounceTimer: NodeJS.Timeout;
-
 
 /**
  * Removes all undefined values from the given options object.
@@ -64,17 +60,17 @@ function getAllIgnorePatterns(config: any, rootDir: string): string[] {
 }
 
 /**
-* The main generator function, executed so that it can be called again
-* by watch mode.
-* This function will return a tree from the current directory
-* based on the given configuration.
-* If the output configuration is not empty, it will be saved
-* to a file named output. If the update configuration is
-* not empty, it will be updated to README.md.
-* If there is no output configuration and update, it will be
-* printed to the terminal.
+ * The main generator function, executed so that it can be called again
+ * by watch mode.
+ * This function will return a tree from the current directory
+ * based on the given configuration.
+ * If the output configuration is not empty, it will be saved
+ * to a file named output. If the update configuration is
+ * not empty, it will be updated to README.md.
+ * If there is no output configuration and update, it will be
+ * printed to the terminal.
  * @param {object} config - The given configuration
- * @return {Promise<void>} 
+ * @return {Promise<void>}
  */
 async function runGenerator(config: any) {
   if (isGenerating) return;
@@ -124,7 +120,7 @@ function debouncedRun(config: any) {
   debounceTimer = setTimeout(() => {
     logInfo("File change detected, regenerating tree...");
     runGenerator(config).catch((err) =>
-      logError("Error during watch run", err)
+      logError("Error during watch run", err),
     );
   }, 300);
 }
@@ -150,7 +146,7 @@ async function main() {
       .option("-d, --depth <number>", "Max depth of folder scan")
       .option(
         "-i, --ignore <patterns>",
-        "Comma-separated patterns (e.g., 'dist,build')"
+        "Comma-separated patterns (e.g., 'dist,build')",
       )
       .option("-u, --update", "Update README.md automatically")
       .option("-r, --root <name>", "Specify a root name (e.g., '.')")
@@ -166,22 +162,27 @@ async function main() {
 
         // const finalConfig = {
         //   ...loadedConfig,
-        //   ...cleanedOptions, 
+        //   ...cleanedOptions,
         // };
 
         const finalConfig = { ...loadedConfig };
 
-        if (cliOptions.depth !== undefined) finalConfig.depth = cliOptions.depth;
-        if (cliOptions.ignore !== undefined) finalConfig.ignore = cliOptions.ignore;
-        if (cliOptions.update !== undefined) finalConfig.update = cliOptions.update;
+        if (cliOptions.depth !== undefined)
+          finalConfig.depth = cliOptions.depth;
+        if (cliOptions.ignore !== undefined)
+          finalConfig.ignore = cliOptions.ignore;
+        if (cliOptions.update !== undefined)
+          finalConfig.update = cliOptions.update;
         if (cliOptions.root !== undefined) finalConfig.root = cliOptions.root;
-        if (cliOptions.output !== undefined) finalConfig.output = cliOptions.output;
-        if (cliOptions.watch !== undefined) finalConfig.watch = cliOptions.watch;
+        if (cliOptions.output !== undefined)
+          finalConfig.output = cliOptions.output;
+        if (cliOptions.watch !== undefined)
+          finalConfig.watch = cliOptions.watch;
 
         if (Array.isArray(loadedConfig.ignore)) {
           finalConfig.ignoreFromFile = loadedConfig.ignore;
           if (cliOptions.ignore === undefined) {
-             delete finalConfig.ignore;
+            delete finalConfig.ignore;
           }
         }
 
@@ -199,7 +200,7 @@ async function main() {
                */
               ignored: (p: string) =>
                 allIgnores.some((pattern) =>
-                  minimatch(p, pattern, { dot: true })
+                  minimatch(p, pattern, { dot: true }),
                 ),
               ignoreInitial: true,
             })

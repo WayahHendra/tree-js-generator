@@ -6,19 +6,18 @@
 [![Made with ❤️ by WyahHndraa](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F-by%20WyahHndraa-black?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
 
-
 A simple yet powerful CLI tool to generate a GitHub-style project directory tree and automatically inject it into your `README.md` file.
 
 ---
 
 ## 🚀 Key Features
 
-* **Auto-Update README:** Intelligently finds `` and `` tags in your `README.md` and updates the content between them.
-* **Smart Configuration:** Set your defaults (like `depth`, `ignore`, etc.) using a `.treerc.json` file.
-* **Flexible Ignore System:** Ignore files and folders using a `.treeignore` file that supports glob patterns (just like `.gitignore`).
-* **Watch Mode:** Run `make-tree --watch` to automatically update your tree every time you add or remove a file.
-* **Custom Output:** Print to the terminal (default), update your `README.md` (`--update`), or save to any file (`--output`).
-* **Full ESM/CJS Support:** Built with modern TypeScript and compiled to both ES Module and CommonJS formats.
+- **Auto-Update README:** Intelligently finds `and` tags in your `README.md` and updates the content between them.
+- **Smart Configuration:** Set your defaults (like `depth`, `ignore`, etc.) using a `.treerc.json` file.
+- **Flexible Ignore System:** Ignore files and folders using a `.treeignore` file that supports glob patterns (just like `.gitignore`).
+- **Watch Mode:** Run `make-tree --watch` to automatically update your tree every time you add or remove a file.
+- **Custom Output:** Print to the terminal (default), update your `README.md` (`--update`), or save to any file (`--output`).
+- **Full ESM/CJS Support:** Built with modern TypeScript and compiled to both ES Module and CommonJS formats.
 
 ---
 
@@ -28,11 +27,11 @@ You can install this tool globally to use it in any of your projects:
 
 ```bash
 npm install -g tree-js-generator
-````
+```
 
-*(Note: The name in your `package.json` is `tree-js-generator`, which will be the package name on NPM)*.
+_(Note: The name in your `package.json` is `tree-js-generator`, which will be the package name on NPM)_.
 
------
+---
 
 ## 📖 Usage
 
@@ -44,18 +43,18 @@ make-tree [options]
 
 ### CLI Options
 
-| Option | Alias | Description |
-| :--- | :--- | :--- |
-| `--depth <n>` | `-d` | Limits the tree's scan depth (e.g., `2`). |
-| `--ignore <patterns>` | `-i` | A comma-separated list of glob patterns to ignore (e.g., `"dist,*.log"`). |
-| `--update` | `-u` | Automatically updates the `README.md` file between tags. |
-| `--output <file>` | `-o` | Saves the tree output to a specific file (e.g., `tree.txt`). |
-| `--root <name>` | `-r` | Adds a custom root name to the top line of the tree (e.g., `"."`). |
-| `--watch` | `-w` | Stays running and watches for file changes, updating automatically. |
-| `--version` | `-v` | Displays the tool's version. |
-| `--help` | `-h` | Displays the help message. |
+| Option                | Alias | Description                                                               |
+| :-------------------- | :---- | :------------------------------------------------------------------------ |
+| `--depth <n>`         | `-d`  | Limits the tree's scan depth (e.g., `2`).                                 |
+| `--ignore <patterns>` | `-i`  | A comma-separated list of glob patterns to ignore (e.g., `"dist,*.log"`). |
+| `--update`            | `-u`  | Automatically updates the `README.md` file between tags.                  |
+| `--output <file>`     | `-o`  | Saves the tree output to a specific file (e.g., `tree.txt`).              |
+| `--root <name>`       | `-r`  | Adds a custom root name to the top line of the tree (e.g., `"."`).        |
+| `--watch`             | `-w`  | Stays running and watches for file changes, updating automatically.       |
+| `--version`           | `-v`  | Displays the tool's version.                                              |
+| `--help`              | `-h`  | Displays the help message.                                                |
 
------
+---
 
 ## ⚙️ Configuration
 
@@ -102,11 +101,7 @@ Create a file named `.treerc.json` in your project root.
 {
   "depth": 2,
   "root": "my-project",
-  "ignore": [
-    "docs",
-    ".github",
-    "*.md"
-  ],
+  "ignore": ["docs", ".github", "*.md"],
   "update": true,
   "watch": false
 }
@@ -122,7 +117,7 @@ The tool merges settings in the following order of priority (number 1 always win
 
 > **Example:** If your `.treerc.json` has `"depth": 2`, but you run `make-tree --depth 4`, then **`depth 4`** will be used. If you just run `make-tree`, then **`depth 2`** will be used.
 
------
+---
 
 ## ✨ Usage Examples
 
@@ -134,14 +129,13 @@ Just run the base command. This will print the tree to your console.
 make-tree
 ```
 
-### 2\. Updating README.md 
+### 2\. Updating README.md
 
 Add these tags to your `README.md` file:
 
 ```markdown
 `<!-- TREE:START -->`
 `<!-- TREE:END -->`
-
 ```
 
 Then, run the command with the `--update` flag:
@@ -195,20 +189,20 @@ make-tree --watch
 
 Now, every time you add, delete, or rename a file, your `README.md` will be updated automatically.
 
------
+---
 
 ## Documentation & Policies
 
 For detailed information on project management, security, and conduct, please refer to the following documents:
 
-* **Code of Conduct** – [CODE\_OF\_CONDUCT.md](./CONTRIBUTING.md)
-* **Security Guidelines** – [SECURITY.md](./SECURITY.md)
-* **Version Control Policy** – [VERSION\_CONTROL.md](./VERSION_CONTROL.md)
-* **Changelog** – [CHANGELOG.md](./CHANGELOG.md)
+- **Code of Conduct** – [CODE_OF_CONDUCT.md](./CONTRIBUTING.md)
+- **Security Guidelines** – [SECURITY.md](./SECURITY.md)
+- **Version Control Policy** – [VERSION_CONTROL.md](./VERSION_CONTROL.md)
+- **Changelog** – [CHANGELOG.md](./CHANGELOG.md)
 
 ## 🤝 Contributing
 
-Please refer to the **Version Control Policy** for detailed instructions on contributing: [VERSION\_CONTROL.md](./VERSION_CONTROL.md).
+Please refer to the **Version Control Policy** for detailed instructions on contributing: [VERSION_CONTROL.md](./VERSION_CONTROL.md).
 
 ## 📜 License
 

@@ -16,7 +16,7 @@ import { GenerateTreeOptions } from "../config/types";
 export async function generateTree(
   dir: string,
   options: GenerateTreeOptions,
-  rootDir: string, 
+  rootDir: string,
   prefix = "",
   currentDepth = 0,
 ): Promise<string> {
@@ -26,16 +26,21 @@ export async function generateTree(
 
   const entries = fs
     .readdirSync(dir, { withFileTypes: true })
-    .filter(entry => {
+    .filter((entry) => {
       const entryPath = path.join(dir, entry.name);
-      return !shouldIgnore(entry.name, entryPath, options.ignorePatterns, rootDir); 
+      return !shouldIgnore(
+        entry.name,
+        entryPath,
+        options.ignorePatterns,
+        rootDir,
+      );
     })
     .sort((a, b) => {
       if (a.isDirectory() && !b.isDirectory()) return -1;
       if (!a.isDirectory() && b.isDirectory()) return 1;
       return a.name.localeCompare(b.name);
     });
-    // .sort((a, b) => a.name.localeCompare(b.name));
+  // .sort((a, b) => a.name.localeCompare(b.name));
 
   const lines: string[] = [];
 
