@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { minimatch } from "minimatch"; //
+import { minimatch } from "minimatch";
 
 let treeIgnorePatterns: string[] | null = null;
 
@@ -28,18 +28,17 @@ export function getTreeIgnorePatterns(rootDir: string): string[] {
   return treeIgnorePatterns;
 }
 
-
 /**
  * Checks if the given entry should be ignored based on the base ignore list and the root directory.
  * The base ignore list is expanded by adding a trailing '**' to each pattern that does not contain a '/'.
  * The expanded list is then used to check if the entry name or relative path matches any of the patterns.
  * If a match is found, the entry is considered ignored and the function returns true.
  * Otherwise, the function returns false.
- * @param entryName - The name of the entry to check.
- * @param entryPath - The path of the entry to check.
- * @param baseIgnoreList - The base list of ignore patterns.
- * @param rootDir - The root directory to resolve the relative path against.
- * @returns True if the entry should be ignored, false otherwise.
+ * @param {string} entryName - The name of the entry to check.
+ * @param {string} entryPath - The path of the entry to check.
+ * @param {string[]} baseIgnoreList - The base list of ignore patterns.
+ * @param {string} rootDir - The root directory to resolve the relative path against.
+ * @returns {boolean} True if the entry should be ignored, false otherwise.
  */
 export function shouldIgnore(
   entryName: string,
@@ -52,14 +51,10 @@ export function shouldIgnore(
   const relativePath = path.relative(rootDir, entryPath);
 
   for (const pattern of allPatterns) {
-    const patternsToTest = [
-      pattern, 
-    ];
+    const patternsToTest: string[] = [pattern];
 
-    if (!pattern.includes('/')) {
-      patternsToTest.push(`${pattern}/**`);
-    } else if (pattern.endsWith('/')) {
-      patternsToTest.push(`${pattern}**`);
+    if (pattern.endsWith("/")) {
+      patternsToTest.push(pattern.substring(0, pattern.length - 1));
     }
     
     for (const p of patternsToTest) {
