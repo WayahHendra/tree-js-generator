@@ -12,7 +12,9 @@
     "dev": "node dist/index.js",
     "build": "tsup",
     "test": "vitest run",
-    "test:watch": "vitest --watch"
+    "test:watch": "vitest --watch",
+    "lint": "npx prettier --check .",
+    "lint:fix": "npx prettier --write ."
   },
   "keywords": [
     "tree",
