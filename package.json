@@ -1,0 +1,48 @@
+{
+  "name": "tree-js-generator",
+  "version": "1.0.0",
+  "description": "CLI tool to generate a GitHub-style project tree and insert it into README.md",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "make-tree": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "node dist/index.js",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "keywords": [
+    "tree",
+    "github-tree",
+    "directory-structure",
+    "readme",
+    "cli"
+  ],
+  "author": "wyahhndraa",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/chokidar": "^1.7.5",
+    "@types/commander": "^2.12.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/minimatch": "^5.1.2",
+    "@types/node": "^24.10.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "chokidar": "^4.0.3",
+    "commander": "^14.0.2",
+    "cosmiconfig": "^9.0.0",
+    "fs-extra": "^11.3.2",
+    "minimatch": "^10.1.1",
+    "ora": "^5.4.1",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  }
+}
