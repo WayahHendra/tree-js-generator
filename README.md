@@ -3,7 +3,7 @@
 <div align="center">
   <br/>
 
-  _(Programming Language – Node.js / TypeScript)_
+_(Programming Language – Node.js / TypeScript)_
 
   <br/>
 
@@ -33,7 +33,8 @@
     </a>
   </p>
 
-  *A simple yet powerful CLI tool that generates a clean, GitHub-style project directory tree and automatically injects it into your `README.md`. Designed for developers who want to keep their documentation clean, consistent, and always up to date.*
+_A simple yet powerful CLI tool that generates a clean, GitHub-style project directory tree and automatically injects it into your `README.md`. Designed for developers who want to keep their documentation clean, consistent, and always up to date._
+
 </div>
 
 ---
