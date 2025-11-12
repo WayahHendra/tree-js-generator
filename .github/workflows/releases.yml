@@ -47,9 +47,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Read package.json
+      - name: Read package name
         id: read_pkg
-        run: echo "content=$(cat package.json)" >> $GITHUB_OUTPUT
+        run: echo "PACKAGE_NAME=$(jq -r .name package.json)" >> $GITHUB_OUTPUT
 
       - name: Generate Conventional Changelog
         id: changelog
@@ -73,20 +73,23 @@ jobs:
       - name: Notify Discord
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          PACKAGE_NAME: ${{ fromJson(steps.read_pkg.outputs.content).name }}
-        # -----------------------------
+          PACKAGE_NAME: ${{ steps.read_pkg.outputs.PACKAGE_NAME }}
+          CHANGELOG_BODY: ${{ steps.changelog.outputs.changelog }}
         run: |
           TAG=${{ github.ref_name }}
           RELEASE_URL="https://github.com/${{ github.repository }}/releases/tag/${TAG}"
-          CHANGELOG="${{ steps.changelog.outputs.changelog }}"
 
-          # Batasi changelog agar tidak terlalu panjang untuk Discord
-          CHANGELOG_SHORT=$(echo "$CHANGELOG" | head -n 15)
+          # Proses variabel env yang aman
+          CHANGELOG_SHORT=$(echo "$CHANGELOG_BODY" | head -n 15)
 
+          # Buat deskripsi sebagai variabel bash terpisah
+          DESCRIPTION="• **Package:** \`${{ env.PACKAGE_NAME }}\`\n• **Release:** [${TAG}](${RELEASE_URL})\n\n**Changelog:**\n${CHANGELOG_SHORT}"
+
+          # Masukkan variabel 'DESCRIPTION' secara aman ke jq
           JSON_PAYLOAD=$(jq -n \
             --arg content "🚀 **New Version Published: ${TAG}**" \
             --arg title "${TAG} - Published" \
-            --arg desc "• **Package:** \`${{ env.PACKAGE_NAME }}\`\n• **Release:** [${TAG}](${RELEASE_URL})\n\n**Changelog:**\n${CHANGELOG_SHORT}" \
+            --arg desc "$DESCRIPTION" \
             '{
               "content": $content,
               "embeds": [
