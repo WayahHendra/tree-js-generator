@@ -23,9 +23,17 @@
     "readme",
     "cli"
   ],
-  "author": "wyahhndraa",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WayahHendra/tree-js-generator.git"
+  },
+  "author": "wyahhndraa <wyahhndraa@gmail.com>",
   "license": "MIT",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/WayahHendra/tree-js-generator/issues"
+  },
+  "homepage": "https://github.com/WayahHendra/tree-js-generator#readme",
   "devDependencies": {
     "@types/chokidar": "^1.7.5",
     "@types/commander": "^2.12.0",
