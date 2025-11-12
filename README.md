@@ -1,12 +1,40 @@
 # 🌳 tree-js-generator (`make-tree`)
 
-[![Tree Generator CLI](https://img.shields.io/badge/Tree--JS--Generator-CLI-black?style=for-the-badge&logo=tree-sitter&logoColor=white)](#)
-[![NPM Version](https://img.shields.io/npm/v/tree-js-generator?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/tree-js-generator)
-[![Node](https://img.shields.io/badge/Node-%3E%3D18.0.0-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Made with ❤️ by WyahHndraa](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F-by%20WyahHndraa-black?style=for-the-badge)](#)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
+<div align="center">
+  <br/>
 
-A simple yet powerful CLI tool to generate a GitHub-style project directory tree and automatically inject it into your `README.md` file.
+  _(Programming Language – Node.js / TypeScript)_
+
+  <br/>
+
+  <p align="center">
+    <a href="#">
+      <img alt="MH-DDoS Tree Generator CLI (main)" src="https://img.shields.io/badge/Tree--JS--Generator-CLI-black?style=for-the-badge&logo=tree-sitter&logoColor=white">
+    </a>
+    <a href="#">
+      <img alt="MH-DDoS last commit" src="https://img.shields.io/github/last-commit/WayahHendra/tree-js-generator?color=green&style=for-the-badge">
+    </a>
+    <a href="https://www.npmjs.com/package/tree-js-generator">
+      <img alt="MH-DDoS NPM Version" src="https://img.shields.io/npm/v/tree-js-generator?style=for-the-badge&logo=npm&logoColor=white&color=CB3837">
+    </a>
+    <a href="#">
+      <img alt="MH-DDoS License" src="https://img.shields.io/github/license/WayahHendra/tree-js-generator?color=orange&style=for-the-badge">
+    </a>
+    <a href="#">
+      <img alt="MH-DDoS Repo stars" src="https://img.shields.io/github/stars/WayahHendra/tree-js-generator?style=for-the-badge&color=yellow">
+    </a>
+    <a href="#">
+      <img alt="Made with ❤️" src="https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F-WyahHndraa-black?style=for-the-badge">
+    </a>
+    <br/>
+    <br/>
+    <a href="https://buymeacoffee.com/wayahhendra">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20Me%20A%20Coffee&emoji=&slug=wayahhendra&button_colour=FF813F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" />
+    </a>
+  </p>
+
+  *A simple yet powerful CLI tool that generates a clean, GitHub-style project directory tree and automatically injects it into your `README.md`. Designed for developers who want to keep their documentation clean, consistent, and always up to date.*
+</div>
 
 ---
 
