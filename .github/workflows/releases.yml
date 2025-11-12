@@ -78,14 +78,8 @@ jobs:
         run: |
           TAG=${{ github.ref_name }}
           RELEASE_URL="https://github.com/${{ github.repository }}/releases/tag/${TAG}"
-
-          # Proses variabel env yang aman
           CHANGELOG_SHORT=$(echo "$CHANGELOG_BODY" | head -n 15)
-
-          # Buat deskripsi sebagai variabel bash terpisah
           DESCRIPTION="• **Package:** \`${{ env.PACKAGE_NAME }}\`\n• **Release:** [${TAG}](${RELEASE_URL})\n\n**Changelog:**\n${CHANGELOG_SHORT}"
-
-          # Masukkan variabel 'DESCRIPTION' secara aman ke jq
           JSON_PAYLOAD=$(jq -n \
             --arg content "🚀 **New Version Published: ${TAG}**" \
             --arg title "${TAG} - Published" \
