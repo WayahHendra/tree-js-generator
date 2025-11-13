@@ -1,6 +1,6 @@
-# Security Policy – tree-js-generator
+# Security Policy – tree-md-generator
 
-`tree-js-generator` is an **open-source CLI tool** for generating and visualizing directory trees.  
+`tree-md-generator` is an **open-source CLI tool** for generating and visualizing directory trees.  
 It is distributed under the **MIT License** — feel free to use, modify, and contribute!
 
 Security is a top priority, and any vulnerabilities must be reported through official channels.
@@ -44,7 +44,7 @@ To maintain a secure codebase, contributors are encouraged to:
 
 ## Responsible Disclosure
 
-`tree-js-generator` follows the principles of **Coordinated Vulnerability Disclosure (CVD)**.  
+`tree-md-generator` follows the principles of **Coordinated Vulnerability Disclosure (CVD)**.  
 Researchers or contributors who responsibly report valid vulnerabilities may be acknowledged in the project’s release notes or documentation.
 
 ## Preferred Languages
@@ -56,4 +56,4 @@ All security-related communications should preferably be in **English**.
 - **Email:** wyahhndraa@gmail.com
 - **Security Page:** [Add your official security portal or website if applicable]
 
-_This Security Policy applies to the open-source `tree-js-generator` project and all official distributions under its MIT License._
+_This Security Policy applies to the open-source `tree-md-generator` project and all official distributions under its MIT License._

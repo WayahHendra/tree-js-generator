@@ -1,10 +1,10 @@
-# Code of Conduct – tree-js-generator
+# Code of Conduct – tree-md-generator
 
-This Code of Conduct outlines the expectations for all contributors, maintainers, and participants in the **tree-js-generator** proprietary project. Adhering to these guidelines ensures a professional, safe, and inclusive environment.
+This Code of Conduct outlines the expectations for all contributors, maintainers, and participants in the **tree-md-generator** proprietary project. Adhering to these guidelines ensures a professional, safe, and inclusive environment.
 
 ## Our Commitment
 
-tree-js-generator is committed to fostering a welcoming and respectful community. We expect all participants to uphold these values:
+tree-md-generator is committed to fostering a welcoming and respectful community. We expect all participants to uphold these values:
 
 - **Professionalism:** Conduct yourself with integrity, honesty, and accountability.
 - **Respect:** Treat others with courtesy, regardless of role, experience, or background.
@@ -19,7 +19,7 @@ Participants are expected to:
 - Give constructive feedback that focuses on improvement, not personal criticism.
 - Report bugs, issues, or vulnerabilities responsibly.
 - Respect privacy and confidentiality of proprietary information.
-- Follow the version control, security, and contribution policies of tree-js-generator.
+- Follow the version control, security, and contribution policies of tree-md-generator.
 
 ## Unacceptable Behavior
 
@@ -58,4 +58,4 @@ Violations may result in:
 
 By contributing, you agree to adhere to this Code of Conduct. Your cooperation helps maintain a professional, safe, and collaborative environment.
 
-_This Code of Conduct is applicable to all contributors, maintainers, and participants in the tree-js-generator proprietary project._
+_This Code of Conduct is applicable to all contributors, maintainers, and participants in the tree-md-generator proprietary project._

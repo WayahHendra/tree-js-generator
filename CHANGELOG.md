@@ -1,4 +1,4 @@
-# Changelog – tree-js-generator
+# Changelog – tree-md-generator
 
 All notable changes to this project will be documented in this file.
 

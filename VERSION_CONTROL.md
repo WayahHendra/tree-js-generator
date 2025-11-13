@@ -1,6 +1,6 @@
-# Version Control Policy – tree-js-generator
+# Version Control Policy – tree-md-generator
 
-This document defines the version control practices, branching strategy, commit conventions, and release workflow for the **open-source** project `tree-js-generator`.
+This document defines the version control practices, branching strategy, commit conventions, and release workflow for the **open-source** project `tree-md-generator`.
 
 ## Repository Access
 
@@ -119,4 +119,4 @@ git push origin v1.0.0
 - Persistent violations (e.g., pushing to main, unreviewed merges) may result in temporary access restrictions.
 - Contributors must acknowledge and follow this version control policy to maintain repository quality.
 
-_This document establishes the open-source version control standards for the `tree-js-generator` project, ensuring consistency, transparency, and security throughout development._
+_This document establishes the open-source version control standards for the `tree-md-generator` project, ensuring consistency, transparency, and security throughout development._
