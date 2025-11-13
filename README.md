@@ -28,8 +28,8 @@ _(Programming Language – Node.js / TypeScript)_
     </a>
     <br/>
     <br/>
-    <a href="https://buymeacoffee.com/wayahhendra">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20Me%20A%20Coffee&emoji=&slug=wayahhendra&button_colour=FF813F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" />
+    <a href="https://buymeacoffee.com/wyahhndraa">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20Me%20A%20Coffee&emoji=&slug=wyahhndraa&button_colour=FF813F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" />
     </a>
   </p>
 
