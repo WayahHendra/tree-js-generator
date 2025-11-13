@@ -18,7 +18,7 @@ _(Programming Language – Node.js / TypeScript)_
       <img alt="MH-DDoS NPM Version" src="https://img.shields.io/npm/v/tree-md-generator?style=for-the-badge&logo=npm&logoColor=white&color=CB3837">
     </a>
     <a href="#">
-      <img alt="MH-DDoS License" src="https://img.shields.io/github/license/WayahHendra/tree-md-generator?color=orange&style=for-the-badge">
+      <img alt="MH-DDoS License" src="https://img.shields.io/github/license/WayahHendra/tree-md-generator?color=orange&style=for-the-badge&cacheSeconds=3600&_=${Date.now()}">
     </a>
     <a href="#">
       <img alt="MH-DDoS Repo stars" src="https://img.shields.io/github/stars/WayahHendra/tree-md-generator?style=for-the-badge&color=yellow">
