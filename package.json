@@ -1,5 +1,5 @@
 {
-  "name": "tree-js-generator",
+  "name": "tree-md-generator",
   "version": "1.0.0",
   "description": "CLI tool to generate a GitHub-style project tree and insert it into README.md",
   "main": "./dist/index.js",
@@ -25,15 +25,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WayahHendra/tree-js-generator.git"
+    "url": "git+https://github.com/WayahHendra/tree-md-generator.git"
   },
   "author": "wyahhndraa <wyahhndraa@gmail.com>",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/WayahHendra/tree-js-generator/issues"
+    "url": "https://github.com/WayahHendra/tree-md-generator/issues"
   },
-  "homepage": "https://github.com/WayahHendra/tree-js-generator#readme",
+  "homepage": "https://github.com/WayahHendra/tree-md-generator#readme",
   "devDependencies": {
     "@types/chokidar": "^1.7.5",
     "@types/commander": "^2.12.0",

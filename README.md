@@ -1,4 +1,4 @@
-# 🌳 tree-js-generator (`make-tree`)
+# 🌳 tree-md-generator (`make-tree`)
 
 <div align="center">
   <br/>
@@ -12,16 +12,16 @@ _(Programming Language – Node.js / TypeScript)_
       <img alt="MH-DDoS Tree Generator CLI (main)" src="https://img.shields.io/badge/Tree--JS--Generator-CLI-black?style=for-the-badge&logo=tree-sitter&logoColor=white">
     </a>
     <a href="#">
-      <img alt="MH-DDoS last commit" src="https://img.shields.io/github/last-commit/WayahHendra/tree-js-generator?color=green&style=for-the-badge">
+      <img alt="MH-DDoS last commit" src="https://img.shields.io/github/last-commit/WayahHendra/tree-md-generator?color=green&style=for-the-badge">
     </a>
-    <a href="https://www.npmjs.com/package/tree-js-generator">
-      <img alt="MH-DDoS NPM Version" src="https://img.shields.io/npm/v/tree-js-generator?style=for-the-badge&logo=npm&logoColor=white&color=CB3837">
-    </a>
-    <a href="#">
-      <img alt="MH-DDoS License" src="https://img.shields.io/github/license/WayahHendra/tree-js-generator?color=orange&style=for-the-badge">
+    <a href="https://www.npmjs.com/package/tree-md-generator">
+      <img alt="MH-DDoS NPM Version" src="https://img.shields.io/npm/v/tree-md-generator?style=for-the-badge&logo=npm&logoColor=white&color=CB3837">
     </a>
     <a href="#">
-      <img alt="MH-DDoS Repo stars" src="https://img.shields.io/github/stars/WayahHendra/tree-js-generator?style=for-the-badge&color=yellow">
+      <img alt="MH-DDoS License" src="https://img.shields.io/github/license/WayahHendra/tree-md-generator?color=orange&style=for-the-badge">
+    </a>
+    <a href="#">
+      <img alt="MH-DDoS Repo stars" src="https://img.shields.io/github/stars/WayahHendra/tree-md-generator?style=for-the-badge&color=yellow">
     </a>
     <a href="#">
       <img alt="Made with ❤️" src="https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F-WyahHndraa-black?style=for-the-badge">
@@ -55,10 +55,10 @@ _A simple yet powerful CLI tool that generates a clean, GitHub-style project dir
 You can install this tool globally to use it in any of your projects:
 
 ```bash
-npm install -g tree-js-generator
+npm install -g tree-md-generator
 ```
 
-_(Note: The name in your `package.json` is `tree-js-generator`, which will be the package name on NPM)_.
+_(Note: The name in your `package.json` is `tree-md-generator`, which will be the package name on NPM)_.
 
 ---
 
